@@ -6,25 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my first trial side hustle</title>
 </head>
+<style>
+    h1{
+        background-color: blue;
+        color: aqua;
+        margin: 5px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .box{
+        border: 50px;
+        width: 200px;
+        padding: 5px;
+        background-color: aqua;
+
+    }
+    button{
+        background-color: blue;
+        color: azure;
+        border: none;
+        height: 36px;
+        width: 74px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color:violet;
+    }
+
+</style>
 <body>
     <h1>HAVILAH SCHOOL FORM</h1>
+    <br>
     <form action="process.php" method="post">
-        <div>
+        <div class="box">
             <label>First Name</label>
             <input type="text" name="First Name">
         </div>
         <br>
-        <div>
+        <div class="box">
             <label>Last name</label>
             <input type="text" name="Last Name">
         </div>
         <br>
-        <div>
+        <div class="box">
             <label>Email</label>
             <input type="email" name="email">
         </div>
         <br>
-        <div>
+        <div class="box">
         <label>Gender</label>
         <select name="gender">
             <option value="Male">Male</option>
@@ -33,12 +66,12 @@
         </select>
     </div>
     <br>
-    <div>
+    <div class="box">
         <label>Age:</label>
         <input type="number" name="age" value="15"> 
     </div>
     <br>
-    <div>
+    <div class="box">
         <label>Birthday:</label>
         <input type="date" name="birthday"> 
     </div>
@@ -46,7 +79,7 @@
     <input type="submit" name="submit" value="submit">
     <br>
     <br>
-    <button>CLICK ME</button>
+    <button>CLICK</button>
 
 
             

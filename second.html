@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling my favorite page</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 3fr 2fr;
+        }
+
+
+        .cash{
+            padding: 1em;
+           border: white solid 1px;
+            background: grey;
+            font-size: 1em;
+              font-weight: bold;
+            text-align: center;
+        }
+        header{
+            background:white;
+            color: red;
+            height: 5vh;
+            font-size: 2em;
+        }
+
+        .refund{
+            padding: 1em;
+           border: white solid 5px;
+            background: grey;
+            font-size: 1em;
+            width: 1300px;
+              font-weight: bold;
+            text-align: left;           
+        }
+
+       .fill-button{
+            background-color: #ff0000;
+            color: white;
+
+        }
+        button{
+            background-color: grey;
+            border-style: solid;
+            border-width: 1px
+    
+        }
+
+
+
+    </style>
+    <script>
+        alert('successful')
+    </script>
+</head>
+<body>
+    <header>UBA COMPLAINT FORM</header>
+    <a href="image/UBA logo.jpg.jpg">
+        <img src="image/UBA logo.jpg.jpg" alt="UBA logo" width="50">
+    </a>
+    <div class="grid">
+        <div class="cash">CASH DISPENSE ERROR</div>
+        <div class="cash">CHARGEBACK REQUEST</div>
+    </div>
+    <br>
+    <main>
+        <section>
+            <button class="fill-button">Customer's Name:</button>
+            <input type="text" id="name" name="name">
+            <br>
+            <br>
+            <button class="fill-button">Card No:</button>
+            <input type="text" id="name" name="name">
+            <br>
+            <br>
+            <button class="fill-button">A/C No:</button>
+            <input type="text" id="name" name="name">
+            <br>
+            <br>
+            <button class="fill-button">Phone No:</button>
+            <input type="text" id="name" name="name">
+            <br>
+            <br>
+            <button class="fill-button">Email:</button>
+            <input type="text" id="name" name="name">
+                <hr>
+                <div class="grid">
+                    <div class="refund">AMOUNT REFUNDABLE</div>
+                </div>
+                    <button>Transaction Amount</button>
+                    <input type="text" id="name" name="name">
+                    <button>Amount in Figures</button>
+                    <input type="text" id="name" name="name">
+                    <button>Total Amount in Words</button>
+                    <input type="text" id="name" name="name">
+            
+                <br>
+                <hr>
+                
+                <div>
+                    <label for="name">Transaction type:</label>
+                    <input type="checkbox" name="like" value="ATM" id="like"> ATM
+                    <input type="checkbox" name="like" value="POS" id="like">POS
+                <input type="checkbox" name="like" value="Mobile" id="like">Mobile
+                    <input type="checkbox" name="like" value="Web" id="like">Web
+                    <input type="checkbox" name="like" value="Others(pls specify)" id="like">Others(pls specify)
+                </div>
+                <br>
+                <div>
+                    <label for="date">Date of Transaction:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <br>
+                <div>
+                    <label for="name">Customer's Signature:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+  
+</body>
+</html>
